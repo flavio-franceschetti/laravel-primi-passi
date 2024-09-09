@@ -16,22 +16,25 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     $title = 'All Films';
 
-    // $films = [
-    //     [
-    //         "titolo" => "Inception",
-    //         "cast" => ["Leonardo DiCaprio", "Joseph Gordon-Levitt", "Ellen Page"]
-    //     ],
-    //     [
-    //         "titolo" => "The Matrix",
-    //         "cast" => ["Keanu Reeves", "Laurence Fishburne", "Carrie-Anne Moss"]
-    //     ],
-    //     [
-    //         "titolo" => "Interstellar",
-    //         "cast" => ["Matthew McConaughey", "Anne Hathaway", "Jessica Chastain"]
-    //     ]
-    // ];
+    $films = [
+        [
+            "titolo" => "Inception",
+            "poster" => "/Users/flavio/Desktop/booleanes/LARAVEL/laravel-primi-passi/public/img/inception.jpg",
+            "cast" => ["Leonardo DiCaprio", "Joseph Gordon-Levitt", "Ellen Page"]
+        ],
+        [
+            "titolo" => "The Matrix",
+            "poster" => "/public/img/matrix.jpg",
+            "cast" => ["Keanu Reeves", "Laurence Fishburne", "Carrie-Anne Moss"]
+        ],
+        [
+            "titolo" => "Interstellar",
+            "poster" => "/Users/flavio/Desktop/booleanes/LARAVEL/laravel-primi-passi/public/img/interstellar.jpg",
+            "cast" => ["Matthew McConaughey", "Anne Hathaway", "Jessica Chastain"]
+        ]
+    ];
 
-    $films = [];
+    // $films = [];
 
     // dump($films);
 
