@@ -14,5 +14,26 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $title = 'All Films';
+
+    // $films = [
+    //     [
+    //         "titolo" => "Inception",
+    //         "cast" => ["Leonardo DiCaprio", "Joseph Gordon-Levitt", "Ellen Page"]
+    //     ],
+    //     [
+    //         "titolo" => "The Matrix",
+    //         "cast" => ["Keanu Reeves", "Laurence Fishburne", "Carrie-Anne Moss"]
+    //     ],
+    //     [
+    //         "titolo" => "Interstellar",
+    //         "cast" => ["Matthew McConaughey", "Anne Hathaway", "Jessica Chastain"]
+    //     ]
+    // ];
+
+    $films = [];
+
+    // dump($films);
+
+    return view('home', compact('title', 'films'));
 });
