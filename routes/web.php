@@ -19,17 +19,17 @@ Route::get('/', function () {
     $films = [
         [
             "titolo" => "Inception",
-            "poster" => "/Users/flavio/Desktop/booleanes/LARAVEL/laravel-primi-passi/public/img/inception.jpg",
+            "poster" => "/img/inception.jpg",
             "cast" => ["Leonardo DiCaprio", "Joseph Gordon-Levitt", "Ellen Page"]
         ],
         [
             "titolo" => "The Matrix",
-            "poster" => "/public/img/matrix.jpg",
+            "poster" => "/img/matrix.jpg",
             "cast" => ["Keanu Reeves", "Laurence Fishburne", "Carrie-Anne Moss"]
         ],
         [
             "titolo" => "Interstellar",
-            "poster" => "/Users/flavio/Desktop/booleanes/LARAVEL/laravel-primi-passi/public/img/interstellar.jpg",
+            "poster" => "/img/interstellar.jpg",
             "cast" => ["Matthew McConaughey", "Anne Hathaway", "Jessica Chastain"]
         ]
     ];
